@@ -1,0 +1,29 @@
+{
+  "name": "easy_responsive_css3_pricing_tables",
+  "version": "1.0.0",
+  "description": "Easy responsive CSS3 pricing tables",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "responsive",
+    "css3",
+    "html5",
+    "pricing",
+    "tables",
+    "Jeandre",
+    "Melaria",
+    "template"
+  ],
+  "author": "Jeandre Melaria",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-cssnano": "^2.1.2",
+    "gulp-htmlmin": "^3.0.0"
+  },
+  "dependencies": {}
+}
