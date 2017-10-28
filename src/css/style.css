@@ -60,6 +60,9 @@ Last modified: 28.10.2017
   font-size: 1.2rem;
   border-radius: 5px;
 }
+.price-box .button:hover {
+  background: #00688b;
+}
 body {
   font-family: Tahoma, sans-serif;
   background: #333333;
@@ -70,6 +73,9 @@ footer {
   text-align: center;
 }
 footer .jeandremelaria {
+  color: #0099cc;
+}
+footer .jeandremelaria:hover {
   color: #00688b;
 }
 @media (max-width: 700px) {
