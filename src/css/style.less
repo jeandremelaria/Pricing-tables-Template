@@ -7,20 +7,32 @@ IDE tool: Dreamweaver
 Database:  -
 Project type: Pricing table template.
 File created date: 28.10.2017
-Last modified: 
+Last modified: 28.10.2017 
 */
 
 // === === Table of contents === === //
 // - Variables
 // - Functions
 // - Mixings
+// - Global
+// - Media query
 
 // === === Variables === === //
 @color-1:#333;
 @color-2:#fff;
+@color-3:#555;
+@color-4:#111;
+@color-5:#eee;
+@color-6:#f4f4f4;
+@color-7:#0099CC;
+@color-8:#00688B;
+
 @font:Tahoma, sans-serif;
-
-
+@border: 0.5rem solif #555;
+@margin: 0;
+@padding:0;
+@box-shadow: 0 10px 15px 0 #000;
+@font-size:1.5rem;
 
 // === === Functions === === //
 .font(@font){
@@ -29,7 +41,7 @@ Last modified:
 .bgColor(@bgColor:@color-1){
 	background:@bgColor;
 }
-.color(@color:color-2){
+.color(@color){
 	color:@color;
 }
 .width(@width:33.3%){
@@ -44,13 +56,75 @@ Last modified:
 	float:left;
 	.width();
 	.padding();
-	
+	box-sizing:border-box;
 	
 }
-
+.price-box{
+	.bgColor(@color-2);
+	.color(@color-3);
+	list-style-type:none;
+	border:@border;
+	margin:@margin;
+	padding:@padding;
+	transition:0.3s;
+	
+		&:hover{
+			box-shadow:@box-shadow;
+		}
+	.best{
+		box-shadow:@box-shadow;
+	}
+		
+	 .header{
+		.bgColor(@color-4);
+		.color(@color-2);
+		font-size:@font-size;
+	}
+	.header-blue{
+		.bgColor(@color-8);
+	}
+	
+	li{
+		padding:@padding+1rem;
+		border-bottom:2px solid @color-5;
+		text-align:center;
+	}
+	
+	.emph{
+		.bgColor(@color-6);
+		font-size:@font-size;
+	}
+	
+	.button{
+		.bgColor(@color-7);
+		border:none;
+		.color(@color-2);
+		padding:(@padding+0.5rem) (@padding+1rem);
+		text-align:center;
+		text-decoration:none;
+		font-size:(@font-size - 0.3rem);
+		border-radius:5px;
+	}
+}
 // === === Global === === //
 body{
 	.font(@font);
 	.bgColor();
-	.color();
+	.color(@color-2);
+}
+h2, footer{
+	text-align:center;
+}
+
+footer{
+	.jeandremelaria{
+		.color(@color-8);
+	}
+}
+
+// === === Media query === === //
+@media(max-width:700px){
+	.col{
+		.width(100%);
+	}
 }

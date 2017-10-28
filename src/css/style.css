@@ -10,15 +10,70 @@ IDE tool: Dreamweaver
 Database:  -
 Project type: Pricing table template.
 File created date: 28.10.2017
-Last modified: 
+Last modified: 28.10.2017 
 */
 .col {
   float: left;
   width: 33.3%;
   padding: 1rem;
+  box-sizing: border-box;
+}
+.price-box {
+  background: #ffffff;
+  color: #555555;
+  list-style-type: none;
+  border: 0.5rem solif #555555;
+  margin: 0;
+  padding: 0;
+  transition: 0.3s;
+}
+.price-box:hover {
+  box-shadow: 0 10px 15px 0 #000000;
+}
+.price-box .best {
+  box-shadow: 0 10px 15px 0 #000000;
+}
+.price-box .header {
+  background: #111111;
+  color: #ffffff;
+  font-size: 1.5rem;
+}
+.price-box .header-blue {
+  background: #00688b;
+}
+.price-box li {
+  padding: 1rem;
+  border-bottom: 2px solid #eeeeee;
+  text-align: center;
+}
+.price-box .emph {
+  background: #f4f4f4;
+  font-size: 1.5rem;
+}
+.price-box .button {
+  background: #0099cc;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
 }
 body {
   font-family: Tahoma, sans-serif;
   background: #333333;
-  color: color-2;
+  color: #ffffff;
+}
+h2,
+footer {
+  text-align: center;
+}
+footer .jeandremelaria {
+  color: #00688b;
+}
+@media (max-width: 700px) {
+  .col {
+    width: 100%;
+  }
 }
