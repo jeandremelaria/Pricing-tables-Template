@@ -10,3 +10,47 @@ File created date: 28.10.2017
 Last modified: 
 */
 
+// === === Table of contents === === //
+// - Variables
+// - Functions
+// - Mixings
+
+// === === Variables === === //
+@color-1:#333;
+@color-2:#fff;
+@font:Tahoma, sans-serif;
+
+
+
+// === === Functions === === //
+.font(@font){
+	font-family:@font;
+}
+.bgColor(@bgColor:@color-1){
+	background:@bgColor;
+}
+.color(@color:color-2){
+	color:@color;
+}
+.width(@width:33.3%){
+	width:@width;
+}
+.padding(@padding:1rem){
+	padding:@padding;
+}
+
+// === === Mixins === === //
+.col{
+	float:left;
+	.width();
+	.padding();
+	
+	
+}
+
+// === === Global === === //
+body{
+	.font(@font);
+	.bgColor();
+	.color();
+}

@@ -12,3 +12,13 @@ Project type: Pricing table template.
 File created date: 28.10.2017
 Last modified: 
 */
+.col {
+  float: left;
+  width: 33.3%;
+  padding: 1rem;
+}
+body {
+  font-family: Tahoma, sans-serif;
+  background: #333333;
+  color: color-2;
+}
